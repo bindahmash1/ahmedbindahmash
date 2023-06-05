@@ -1,0 +1,6 @@
+C:\Users\popo\Desktop\ToDoApp\ToDoApp\bin\Debug\ToDoApp.exe.config
+C:\Users\popo\Desktop\ToDoApp\ToDoApp\bin\Debug\ToDoApp.exe
+C:\Users\popo\Desktop\ToDoApp\ToDoApp\bin\Debug\ToDoApp.pdb
+C:\Users\popo\Desktop\ToDoApp\ToDoApp\obj\Debug\ToDoApp.csprojResolveAssemblyReference.cache
+C:\Users\popo\Desktop\ToDoApp\ToDoApp\obj\Debug\ToDoApp.exe
+C:\Users\popo\Desktop\ToDoApp\ToDoApp\obj\Debug\ToDoApp.pdb
