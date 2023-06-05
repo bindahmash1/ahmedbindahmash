@@ -1,0 +1,102 @@
+//Class Task
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ToDoApp
+{
+    class Task
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+        public void printTask()
+        { Console.WriteLine("Name  =" + Name); }
+
+    }
+}
+
+
+
+//TaskMangear
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+namespace ToDoApp
+{
+    static class TaskManager
+    {
+        static ArrayList arrayList = new ArrayList();
+        public static void AddTask(Task tasks)
+        { arrayList.Add(tasks); }
+
+        public static void DeleteTask(Task tasks)
+        { arrayList.Remove(tasks); }
+
+        public static int SearchForTask(Task tasks)
+        { return arrayList.IndexOf(tasks); }
+
+    }
+}
+
+
+
+//progarm
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ToDoApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Task tasks = new Task();
+            tasks.Name = "Travel to paris";
+            tasks.printTask();
+
+            Task taskss = new Task();
+            taskss.Name = "Building ahouse";
+            taskss.printTask();
+
+            Task tasksss = new Task();
+            tasksss.Name = "Buy a live animal";
+            tasksss.printTask();
+
+
+            Task taskssss = new Task();
+            taskssss.Name = "Going to Work";
+            taskssss.printTask();
+
+
+            TaskManager.AddTask(tasks);
+            Console.WriteLine("Task Found at :" + TaskManager.SearchForTask(tasks));
+
+            TaskManager.AddTask(taskss);
+            Console.WriteLine("Task Found at :" + TaskManager.SearchForTask(taskss));
+
+            TaskManager.AddTask(tasksss);
+            Console.WriteLine("Task Found at :" + TaskManager.SearchForTask(tasksss));
+
+
+            TaskManager.AddTask(taskssss);
+            Console.WriteLine("Task Found at :" + TaskManager.SearchForTask(taskssss));
+            TaskManager.AddTask(taskss);
+            TaskManager.AddTask(taskssss);
+
+        }
+    }
+}
